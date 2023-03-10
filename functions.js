@@ -1,4 +1,4 @@
-import isEMail from 'validator/lib/isEmail'
+import isEmail from 'validator/lib/isEmail'
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -12,10 +12,11 @@ function generateUniqueID(fName, lName){
 function addAccount(fName, lName, email, age){
     if(fName != null && lName != null && email != null && age != null){
         if(fName != "" && lName != "" && email != ""){
-            //validation if email
+            if(validator.isEmail(email)){
                 if(age >= 18){
                     //write txt file
                 }
+            }
         }
     }
     
