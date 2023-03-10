@@ -33,3 +33,5 @@ function addAccount(fName, lName, email, age){
     }
     
 }
+
+module.exports = { generateUniqueID, addAccount };
